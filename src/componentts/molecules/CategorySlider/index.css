@@ -1,0 +1,8 @@
+li::marker {
+    content: "";
+}
+a {
+    display: inline;
+    line-clamp: 1;
+    text-wrap: none;
+}
