@@ -1,6 +1,10 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Daily Gist
 
-## Getting Started
+Daily Gist is a Next.js application designed to showcase daily news and updates. This document explains how to set up and run the application using Docker.
+
+
+
+## Running Locally with Node
 
 First, run the development server:
 
@@ -16,21 +20,40 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Running Locally with Docker
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Prerequisites
 
-## Learn More
+Before you begin, ensure you have the following installed:
 
-To learn more about Next.js, take a look at the following resources:
+- [Docker](https://www.docker.com/get-started)
+- [Docker Compose](https://docs.docker.com/compose/install/) (if needed for multi-container setups)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Building the Docker Image
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository to your local machine:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/aaronfernande70/daily-digest.git
+   cd daily-gist
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Build the Docker image:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   docker build -t daily-gist .
+   ```
+
+   This command builds a Docker image with the name `daily-gist` using the `Dockerfile` in the current directory.
+
+## Running the Docker Container
+
+1. Run the Docker container:
+
+   ```bash
+   docker run -p 3000:3000 daily-gist
+   ```
+
+   This maps port `3000` of the Docker container to port `3000` on your host machine, allowing you to access the app in your browser.
+
+2. Open your web browser and navigate to:
