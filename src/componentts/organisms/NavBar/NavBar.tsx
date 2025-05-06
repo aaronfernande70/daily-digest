@@ -18,8 +18,8 @@ const NavBar = () => {
             <Image
               src={logo}
               alt="logo"
-              width={250}
-              height={250}
+              width={200}
+              height={200}
               />
           </Link>
 
