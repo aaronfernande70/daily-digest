@@ -20,7 +20,7 @@ const NewsList = async ({ val }: { val?: string }) => {
   }
 
   return (
-    <div className="mx-2 p-4">
+    <div className="mx-2 p-4 ">
       <h1 className="sr-only">NewsList</h1>
       <div className="md:flex gap-3">
         <div className="md:w-3/5">

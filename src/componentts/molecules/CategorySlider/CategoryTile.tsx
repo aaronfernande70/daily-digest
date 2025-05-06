@@ -27,7 +27,7 @@ const CategoryTile = ({ category }: { category: CategoryProps }) => {
       prefetch
       scroll={true}
     >
-      <span className="flex justify-center items-center">{category.name}</span>
+      <span className="flex ">{category.name}</span>
     </Link>
   );
 };

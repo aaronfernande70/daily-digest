@@ -34,11 +34,11 @@ const NewsSwiper = ({news=[]}) => {
                 const urlToImage = article?.urlToImage || article?.media?.[0]?.["media-metadata"]?.[2]?.url || article?.image_url;
                 const url = article?.url;
             return(
-                <SwiperSlide key={title} className="news-card">
+                <SwiperSlide key={title} className="news-card py-3">
                 <Link href={url?? '/'} target="_blank">
                             <div  className="article-card border-b-1 boder py-2 border-gray-400 my-2 flex gap-2 flex-col h-">
-                            <Image width={850} height={400} src={urlToImage ?? placeholderImage} alt={title ?? "Image"} />
-                            <h3 title={title} className="line-clamp-2">{title}</h3>
+                            <Image className="h-[250px] md:h-[500px]" width={850} height={300} src={urlToImage ?? placeholderImage} alt={title ?? "Image"} />
+                            <h4 title={title} className="line-clamp-2 mb-2">{title}</h4>
                             <p title={description} className="line-clamp-2">{description}</p>
                             </div>
                     

@@ -28,9 +28,9 @@ const NewsBullets = ({ news = [] }) => {
                 />
               </span>
               <span>
-                <h3 title={title} className="line-clamp-1">
+                <h4 title={title} className="line-clamp-1">
                   {title}
-                </h3>
+                </h4>
                 <p title={description} className="line-clamp-2">
                   {description}
                 </p>

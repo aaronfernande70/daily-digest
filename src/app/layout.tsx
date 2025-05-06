@@ -14,7 +14,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <html lang="en">
-        <body>
+        <body className="text-sm">
           
           <NavBar />
           {children}

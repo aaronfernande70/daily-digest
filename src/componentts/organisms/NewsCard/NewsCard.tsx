@@ -24,9 +24,9 @@ const NewsCard = ({ news }: { news: ArticleProps }) => {
           placeholder="blur"
           blurDataURL="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbeautyrepublicfdl.com%2Fhello-world%2Fplaceholder-image%2F&psig=AOvVaw2aviCDeu5hQA9dzUZc-im-&ust=1741961306181000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDhttudh4wDFQAAAAAdAAAAABAE"
         />
-        <h3 title={title} className="line-clamp-2">
+        <h4 title={title} className="line-clamp-2">
           {title}
-        </h3>
+        </h4>
         <p title={description} className="line-clamp-2">
           {description}
         </p>
